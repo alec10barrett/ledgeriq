@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+.pytest_cache/
+.coverage
+htmlcov/
+alembic/versions/__pycache__/
+.DS_Store

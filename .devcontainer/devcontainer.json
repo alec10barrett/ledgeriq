@@ -1,0 +1,9 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/itsmechlark/features/postgresql:1": {
+      "version": "15"
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt && sudo service postgresql start && sudo -u postgres psql -c \"CREATE USER assetai WITH PASSWORD 'assetai';\" && sudo -u postgres psql -c \"CREATE DATABASE assetai OWNER assetai;\""
+}
